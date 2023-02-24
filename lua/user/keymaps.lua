@@ -19,8 +19,8 @@ vim.g.mapleader = " "
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -49,6 +49,11 @@ keymap("i", "jk", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+-- Move text up and Down
+-- keymap("v", "∆", "<Esc>:m .+1<CR>==", opts)
+-- keymap("v", "˚", "<Esc>:m .-2<CR>==", opts)
+-- keymap("v", "p", '"_dP', opts)
 
 -- Plugins --
 
